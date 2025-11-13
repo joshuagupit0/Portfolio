@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/44cc7eda07.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="program-bar">
+    <div class="container cont1">
+        <div class="program-nav" id="progress-nav">
+            <h2>Program Use</h2>
+            <h4>HTML</h4>
+            <div class="progress-bar">
+                <div><span>86%</span></div>
+            </div>
+            <h4>CSS</h4>
+            <div class="progress-bar">
+                <div><span>86%</span></div>
+            </div>
+            <h4>Javascript</h4>
+            <div class="progress-bar">
+                <div><span>86%</span></div>
+            </div>
+            <h4>Google Fetch API</h4>
+            <div class="progress-bar">
+                <div><span>86%</span></div>
+            </div>
+            <i class="fa-solid fa-caret-down close" onclick="closebar()"></i>
+        </div>
+        <i class="fa-solid fa-caret-down open" onclick="openbar()"></i>
+    </div> 
+</div>
+
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img class="logo" src="images/logo.png" alt="">
+            <ul id="sidemenu">
+                <i class="fa-solid fa-xmark"></i>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    <div class="header-text">
+        <span id="text"></span><span id="cursor"></span>
+        <h1>Hi, I'm <span>Josh</span><br> From Phillipines</h1>
+    </div>
+</div>
+</div>
+<!-- ---------------About-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/user.png"></div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>IT Officer with 4 years of experience in optimizing system performance, security, and network reliability. Skilled in designing and managing network infrastructure, configuring Windows Server environments, implementing cloud solutions, and deploying PFSense firewalls with VPN and bandwidth management. Proven ability to enhance operational efficiency and system resilience.</p>
+            
+            <div class="tab-title">
+                <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-link" onclick="opentab('Experiences')">Experiences</p>
+                <p class="tab-link" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="Skills">
+                <ul>
+                    <li><span>Network Infrastructure</span><br>Proven ability to architect and maintain resilient that ensure seamless connectivity and business continuity</li>
+                    <li><span>Network Security</span><br>Configured and managed firewalls, IPS/IDS systems, and VPN servers to ensure secure network access.<br>Implemented high availability and failover clustering for critical network services.<br>Managed VLANs, traffic shaping, and bandwidth control to optimize network performance.</li>
+                    <li><span>Systems Administrator</span><br>Deploying and managing Windows Server environments, Azure cloud services, and Hyper-V virtualization</li>
+                    <li><span>UI/UX</span><br>Web Design / App Interfaces</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="Experiences">
+                <ul>
+                    <li><span>2025</span><br>Network Engineer<br>Monarch Diversified Logistic, Inc.<br></li>
+                    <li><span>2024-2025</span><br>IT Officer<br>Archion Architects, Inc.</li>
+                    <li><span>2022-2024</span><br>System & Network Admin<br>Stellmark, Inc.</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="Education">
+                <ul>
+                    <li><span>to</span><br>Web Design / App Interfaces</li>
+                    <li><span>be</span><br>Web Design / App Interfaces</li>
+                    <li><span>Achiever</span><br>Web Design / App Interfaces</li>
+                </ul>
+            </div>
+            <div class="button-content">
+                <div class="button-box">
+                    <a href="https://drive.google.com/file/d/1UoYMKqCaS3PB85g5X8L8FOZtwIY3X5tU/view?usp=sharing" target="_blank"><h4>More Details</h4>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------Services-------------------- -->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Network Design</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-shield"></i>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+              <div>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------Portfolio--------------------------- -->
+ <div id="portfolio">
+    <div class="container"> 
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Network infra</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Firewall</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Server Admin</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+ <!-- ---------------------Contact----------------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-brands fa-telegram"></i>joshuagupit96@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+63 9935657970</p>
+                <div class="social-icons">
+                    <a><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                    <a><i class="fa-solid fa-info"></i></a>
+                    <a><i class="fa-brands fa-viber"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <textarea name="Message" id="" rows="6" placeholder="Message"></textarea>
+                    <button class="btn2" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ---------------------Progress Animation----------------------->
+ <script>
+    var progressmeu = document.getElementById("progress-nav");
+    
+        function openbar() {
+            progressmeu.style.left = "0";
+        }
+        function closebar() {
+            progressmeu.style.left = "-400px";
+        }
+    
+ </script>
+
+<!-- ---------------------MenuBar Animation----------------------->
+ <script>
+    var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    
+ </script>
+<!-- -----------About Tab Switch Function----------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-content") 
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<!-- --------------------Typing Function------------------------------- -->
+<script> 
+// List of sentences
+var _CONTENT = [
+    "IT Officer",
+    "System & Network Administrator", 
+    "Front-End Developer", 
+    "UI/UX Designer"
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+    // Get substring with 1 characater added
+    var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+    _ELEMENT.innerHTML = text;
+    _PART_INDEX++;
+
+    // If full sentence has been displayed then start to delete the sentence after some time
+    if(text === _CONTENT[_PART]) {
+        // Hide the cursor
+        _CURSOR.style.display = 'none';
+
+        clearInterval(_INTERVAL_VAL);
+        setTimeout(function() {
+            _INTERVAL_VAL = setInterval(Delete, 50);
+        }, 1000);
+    }
+}
+
+// Implements deleting effect
+function Delete() {
+    // Get substring with 1 characater deleted
+    var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+    _ELEMENT.innerHTML = text;
+    _PART_INDEX--;
+
+    // If sentence has been deleted then start to display the next sentence
+    if(text === '') {
+        clearInterval(_INTERVAL_VAL);
+
+        // If current sentence was last then display the first one, else move to the next
+        if(_PART == (_CONTENT.length - 1))
+            _PART = 0;
+        else
+            _PART++;
+        
+        _PART_INDEX = 0;
+
+        // Start to display the next sentence after some time
+        setTimeout(function() {
+            _CURSOR.style.display = 'inline-block';
+            _INTERVAL_VAL = setInterval(Type, 100);
+        }, 200);
+    }
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+</script>
+
+<!-- ---------------------- Contact Google Form Connection----------------- -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw6XAJX34ZEmPSKb9PZkRdhZCDtNLOoC_HjU31p0Et14Wil0ZKQqgysA0UaLGEMcCny/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
