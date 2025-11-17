@@ -194,6 +194,9 @@
     </div>
  </div>
 
+<!-- --------------------Portfolio See More---------------------------- -->
+
+
  <!-- ---------------------Contact----------------------- -->
   <div id="contact">
     <div class="container">
@@ -221,149 +224,11 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ---------------------Progress Animation----------------------->
- <script>
-    var progressmeu = document.getElementById("progress-nav");
-    
-        function openbar() {
-            progressmeu.style.left = "0";
-        }
-        function closebar() {
-            progressmeu.style.left = "-400px";
-        }
-    
- </script>
-
-<!-- ---------------------MenuBar Animation----------------------->
- <script>
-    var sidemeu = document.getElementById("sidemenu");
-    
-        function openmenu() {
-            sidemeu.style.right = "0";
-        }
-        function closemenu() {
-            sidemeu.style.right = "-200px";
-        }
-    
- </script>
-<!-- -----------About Tab Switch Function----------- -->
-<script>
-    var tablinks = document.getElementsByClassName("tab-link");
-    var tabcontents = document.getElementsByClassName("tab-content") 
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-
-<!-- --------------------Typing Function------------------------------- -->
-<script> 
-// List of sentences
-var _CONTENT = [
-    "IT Officer",
-    "System & Network Administrator", 
-    "Front-End Developer", 
-    "UI/UX Designer"
-];
-
-// Current sentence being processed
-var _PART = 0;
-
-// Character number of the current sentence being processed 
-var _PART_INDEX = 0;
-
-// Holds the handle returned from setInterval
-var _INTERVAL_VAL;
-
-// Element that holds the text
-var _ELEMENT = document.querySelector("#text");
-
-// Cursor element 
-var _CURSOR = document.querySelector("#cursor");
-
-// Implements typing effect
-function Type() { 
-    // Get substring with 1 characater added
-    var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-    _ELEMENT.innerHTML = text;
-    _PART_INDEX++;
-
-    // If full sentence has been displayed then start to delete the sentence after some time
-    if(text === _CONTENT[_PART]) {
-        // Hide the cursor
-        _CURSOR.style.display = 'none';
-
-        clearInterval(_INTERVAL_VAL);
-        setTimeout(function() {
-            _INTERVAL_VAL = setInterval(Delete, 50);
-        }, 1000);
-    }
-}
-
-// Implements deleting effect
-function Delete() {
-    // Get substring with 1 characater deleted
-    var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-    _ELEMENT.innerHTML = text;
-    _PART_INDEX--;
-
-    // If sentence has been deleted then start to display the next sentence
-    if(text === '') {
-        clearInterval(_INTERVAL_VAL);
-
-        // If current sentence was last then display the first one, else move to the next
-        if(_PART == (_CONTENT.length - 1))
-            _PART = 0;
-        else
-            _PART++;
-        
-        _PART_INDEX = 0;
-
-        // Start to display the next sentence after some time
-        setTimeout(function() {
-            _CURSOR.style.display = 'inline-block';
-            _INTERVAL_VAL = setInterval(Type, 100);
-        }, 200);
-    }
-}
-
-// Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 100);
-</script>
-
-<!-- ---------------------- Contact Google Form Connection----------------- -->
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw6XAJX34ZEmPSKb9PZkRdhZCDtNLOoC_HjU31p0Et14Wil0ZKQqgysA0UaLGEMcCny/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
+<script src="About-SwitchTab.js"></script>
+<script src="Contact-Function.js"></script>
+<script src="menubar.js"></script>
+<script src="progressbar.js"></script>
+<script src="typing-function.js"></script>
 
 </body>
 </html>
