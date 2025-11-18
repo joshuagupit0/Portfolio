@@ -309,13 +309,10 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 .service-list div i, .service-list div span{
-    
     font-size: 50px;
     margin-bottom: 30px;
 }
-.service-list div .person{
-    display: flex;
-}
+
 .service-list div p{
     text-align: left;
 }
